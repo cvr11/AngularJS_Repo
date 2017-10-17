@@ -1,0 +1,40 @@
+
+<html>
+<head>
+
+<title>Angular_Module</title>
+<script src="C:\WebTechnoligiesSoftWares\Angular\angular.min.js">
+</script>
+<script>
+// TODO Create a Module
+var myModule = angular.Module("m1",[]);
+/*
+ *TODO create a Function  
+ *
+ * we can write a function like this 
+ *  function c1(){};
+ */
+var c1 = function ($scope){
+	$scope.name ="Venkat";
+	//$scope.
+};
+
+//TODO registering a controller or object with module 
+myModule.controller("myController",c1);
+
+</script>
+</head>
+
+
+<body ng-app="m1">
+
+<div ng-controller ="myController">
+	{{ name }}	
+</div>
+
+<div>
+This is 2nd div
+{{ 1+2 }}
+</div>
+</body>
+</html>
